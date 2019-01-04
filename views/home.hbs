@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="../angular.js"></script>
+    <script src="../hbsangular.js"></script>
+</head>
+<body ng-app="myApp">
+    {{> navbar}}
+    <div ng-controller="main">
+    This is the home page!
+
+    {{capitalize name}}
+
+    <br/>
+    {{customReturn}}
+    <br/>
+    {[{otherName}]}
+    </div>
+
+    <section>
+        {{> nodepic}}
+    </section>
+
+
+    <footer>
+        {{currentYear}}
+    </footer>
+</body>
+</html>
