@@ -4,6 +4,8 @@ const fs = require('fs');
 
 let app = express();
 
+const port = process.env.PORT || 3000;
+
 function randomData() {
     return 'woah a lot of data..'
 }
@@ -56,6 +58,6 @@ app.get('/home', (req, res) => {
     })
 });
 
-app.listen(3000, () => {
-    console.log('Your express app is being served on port 3000!');
+app.listen(port, () => {
+    console.log(`Your express app is being served on port ${port}!`);
 });
